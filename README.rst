@@ -19,10 +19,14 @@ Usage
 =====
 
 1. Add a credentials file with the following format:
+
     [rackspace_cloud]
     username = myusername
     api_key = 01234567890abcdef
+
 2. Add the command to cron:
+
     /path/to/dns_updater.py example.com me@example.com -s host1 --public
+
 3. ???
 4. Profit.
