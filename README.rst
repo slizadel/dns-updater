@@ -11,8 +11,11 @@ Dependencies
 ============
 
 pyrax (https://github.com/rackspace/pyrax/tree/working)
+
 argh (pip install argh)
+
 argcomplete (pip install argcomplete)
+
 requests (pip install requests)
 
 Usage
@@ -21,7 +24,9 @@ Usage
 1. Add a credentials file with the following format:
 
     [rackspace_cloud]
+
     username = myusername
+
     api_key = 01234567890abcdef
 
 2. Add the command to cron:
