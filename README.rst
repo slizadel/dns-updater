@@ -10,14 +10,19 @@
 Dependencies
 ============
 
-python-clouddns (https://github.com/rackspace/python-clouddns/)
-
+pyrax (https://github.com/rackspace/pyrax/tree/working)
+argh (pip install argh)
+argcomplete (pip install argcomplete)
 requests (pip install requests)
 
 Usage
 =====
 
-1. Modify variables in the script.
-2. Add to cron.
+1. Add a credentials file with the following format:
+    [rackspace_cloud]
+    username = myusername
+    api_key = 01234567890abcdef
+2. Add the command to cron:
+    /path/to/dns_updater.py example.com me@example.com -s host1 --public
 3. ???
 4. Profit.
