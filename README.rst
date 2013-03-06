@@ -10,7 +10,7 @@
 Dependencies
 ============
 
-- pyrax (https://github.com/rackspace/pyrax/tree/working)
+- pyrax >= 1.3.2 (pip install pyrax)
 - argh (pip install argh)
 - argcomplete (pip install argcomplete)
 - requests (pip install requests)
