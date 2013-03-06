@@ -10,13 +10,10 @@
 Dependencies
 ============
 
-pyrax (https://github.com/rackspace/pyrax/tree/working)
-
-argh (pip install argh)
-
-argcomplete (pip install argcomplete)
-
-requests (pip install requests)
+- pyrax (https://github.com/rackspace/pyrax/tree/working)
+- argh (pip install argh)
+- argcomplete (pip install argcomplete)
+- requests (pip install requests)
 
 Usage
 =====
