@@ -39,10 +39,10 @@ def main(domain, email, subdomain=None, ttl=300, rec_type='A', public=False,
     record = domain.find_record(rec_type, name=fqdn)
     if not record:
       record = domain.add_record(new_record)
-      syslog.syslog("Record not found, but a new one was created with IP: %s" % acutal_ip)
+      syslog.syslog("Record not found, but a new one was created with IP: %s" % actual_ip)
     elif record.data != actual_ip:
       record.update(data=actual_ip)
-      syslog.syslog("Domain needed updating. Updated to %s from %s" % (acutal_ip, record.data))
+      syslog.syslog("Domain needed updating. Updated to %s from %s" % (actual_ip, record.data))
   except pyrax.exceptions.NotFound:
     try:
       dom = dns.create(name=domainName, emailAddress=emailAddress,
